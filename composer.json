@@ -1,0 +1,21 @@
+{
+    "name": "segpacto/yii2-httpfull",
+    "description": "Extension conversion of 'Httpful' to yii2 extension",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"," httpfull"," curl"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivan Martinez",
+            "email": "segpacto@yahoo.es"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "HttpFull\\": ""
+        }
+    }
+}
