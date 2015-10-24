@@ -3,7 +3,6 @@
 namespace HttpFull;
 
 use httpfull\Exception\ConnectionErrorException;
-use yii\base\Component;
 
 /**
  * Clean, simple class for sending HTTP requests
