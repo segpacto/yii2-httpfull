@@ -20,7 +20,7 @@ class Httpfull
      * @param string $mimeType
      * @param \Httpfull\Handlers\MimeHandlerAdapter $handler
      */
-    public static function register($mimeType, \httpfull\Handlers\MimeHandlerAdapter $handler)
+    public static function register($mimeType, \HttpFull\Handlers\MimeHandlerAdapter $handler)
     {
         self::$mimeRegistrar[$mimeType] = $handler;
     }
@@ -36,7 +36,7 @@ class Httpfull
         }
 
         if (empty(self::$default)) {
-            self::$default = new \httpfull\Handlers\MimeHandlerAdapter();
+            self::$default = new \HttpFull\Handlers\MimeHandlerAdapter();
         }
 
         return self::$default;

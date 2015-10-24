@@ -79,10 +79,10 @@ class Bootstrap
         // @todo check a conf file to load from that instead of
         // hardcoding into the library?
         $handlers = array(
-            \httpfull\Mime::JSON => new \httpfull\Handlers\JsonHandler(),
-            \httpfull\Mime::XML  => new \httpfull\Handlers\XmlHandler(),
-            \httpfull\Mime::FORM => new \httpfull\Handlers\FormHandler(),
-            \httpfull\Mime::CSV  => new \httpfull\Handlers\CsvHandler(),
+            \HttpFull\Mime::JSON => new \HttpFull\Handlers\JsonHandler(),
+            \HttpFull\Mime::XML  => new \HttpFull\Handlers\XmlHandler(),
+            \HttpFull\Mime::FORM => new \HttpFull\Handlers\FormHandler(),
+            \HttpFull\Mime::CSV  => new \HttpFull\Handlers\CsvHandler(),
         );
 
         foreach ($handlers as $mime => $handler) {

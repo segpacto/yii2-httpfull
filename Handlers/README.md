@@ -4,7 +4,7 @@ Handlers are simple classes that are used to parse response bodies and serialize
 
     <?php
 
-    class SimpleCsvHandler extends \httpfull\Handlers\MimeHandlerAdapter
+    class SimpleCsvHandler extends \HttpFull\Handlers\MimeHandlerAdapter
     {
         /**
          * Takes a response body, and turns it into 

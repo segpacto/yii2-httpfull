@@ -828,7 +828,7 @@ class Request
     public static function initialize($method = null, $mime = null)
     {
         // Setup our handlers, can call it here as it's idempotent
-        \httpfull\Bootstrap::initialize();
+        \HttpFull\Bootstrap::initialize();
 
         // Setup the default template if need be
         if (!isset(self::$_template))
@@ -1118,7 +1118,7 @@ class Request
      */
     public static function post($uri, $payload = null, $mime = null)
     {
-        return self::initialize(\httpfull\Http::POST)->uri($uri)->body($payload, $mime);
+        return self::initialize(\HttpFull\Http::POST)->uri($uri)->body($payload, $mime);
     }
 
     /**
