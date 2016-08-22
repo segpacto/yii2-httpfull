@@ -2,7 +2,7 @@
 
 namespace HttpFull;
 
-use httpfull\Exception\ConnectionErrorException;
+use HttpFull\Exception\ConnectionErrorException;
 
 /**
  * Clean, simple class for sending HTTP requests
